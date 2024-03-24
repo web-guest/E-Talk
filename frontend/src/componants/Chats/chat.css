@@ -1,0 +1,34 @@
+.chat{
+    display: flex;
+    width: 100%;
+}
+.profile-image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 4px;
+
+}
+.profile-image .image{
+    height: 100%;
+    width: 100%;
+}
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chat-name-message{
+    display: flex;
+    padding-left: 8px;
+    padding-top: 8px;
+    width: 80%;
+    flex-direction: column;
+    border-bottom: 1px solid #F6F6FC;
+   
+}
+.chat-name-message > span{
+  
+  font-size: 0.7rem;
+}

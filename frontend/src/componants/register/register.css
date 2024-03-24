@@ -1,0 +1,36 @@
+.file-image{
+    display: flex;
+}
+.file-image .image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+.file-image .image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.file-image .file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.file-image .file .form-control{
+   display: none;
+}
+
+.file > label{
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+.file > label:hover{
+    cursor: pointer;
+}

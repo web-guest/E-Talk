@@ -1,0 +1,114 @@
+
+.chatbox{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #F6F6FC;
+}
+/* .chatbox .messages{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    gap: 15px;
+} */
+.my-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
+    overflow: none ;
+    margin-bottom: 8px;
+}
+.text{
+    max-width: 150px;
+    background-color: white;
+    border-radius: 8px;
+}
+.my-message .text{
+    margin-right: 35px;
+}
+
+.friend-message .text-single{
+    margin-left: 35px;
+}
+.text>p{
+    margin: 0;
+    overflow-wrap: break-word;
+    padding: 8px;
+    
+}
+.text>span{
+    float: right;
+    padding: 4px;
+    font-size: 10px;
+}
+
+.friend-message{
+    display: flex;
+    margin-bottom: 8px;
+    height: auto;
+    overflow: none ;
+    
+}
+.friend-message .image{
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    /* border: 1px solid black; */
+}
+.friend-message .image>img{
+    height: 100%;
+    width: 100%;
+}
+
+ .chatbox::-webkit-scrollbar{
+    background-color: transparent;
+    width: 4px;
+} 
+.chatbox::-webkit-scrollbar-thumb{
+    background: #d6d3f7;
+    cursor: pointer;
+}
+.chatbox::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+}
+.center{
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    
+}
+.center-message{
+    display: flex;
+    /* border: 1px solid black; */
+    margin-bottom: 8px;
+    justify-content: center;
+    
+   
+    
+    
+    
+}
+.center-message .message-text{
+    
+    padding: 2px;
+    font-size: 12px;
+    border-radius: 5px; 
+    background-color: white;
+}
+/* .message >img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}  */

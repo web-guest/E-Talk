@@ -1,0 +1,8 @@
+.view-image{
+    display: flex;
+    position: absolute;
+    height: 40rem;
+    width: 40rem;
+    background-color: rgb(252, 249, 249);
+    
+}

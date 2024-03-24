@@ -1,0 +1,183 @@
+.profileContainer{
+ 
+ display: none;
+}
+.profileContainer--visible{
+    display: flex;
+}
+.profile-photo{
+ display: flex;
+ height: 18rem;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ /* border: 1px solid rgb(189, 21, 21); */
+}
+.profile-photo .image{
+ height: 12rem;
+ width: 12rem;
+ border-radius: 50%;
+ overflow: hidden;
+ 
+ 
+}
+
+.profile-photo .image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.image-layer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    
+    background-color: rgba(255,255,255,0.3);
+    
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image-layer>span{
+    transform: scale(1.5);
+}
+
+
+.image-layer:hover {
+    opacity: 1;
+    cursor: pointer; 
+}
+.profile-photo .view-image{
+    height: 100%;
+ width: 100%;
+ overflow: hidden;
+ padding-bottom: 5px;
+ 
+}
+
+.profile-photo .view-image>img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+.other-details{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+    /* border: 1px solid rgb(189, 21, 21); */
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.other-details .name-detail, .email-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name-detail .name, .email-detail .email {
+    display: flex;
+    flex-direction: row;
+}
+
+.name-detail .name .name-p, .email-detail .email .email-p{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    font-weight: bold;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    padding-right: 10px;
+}
+
+.icon:hover{
+    cursor: pointer;
+} 
+.cross:hover{
+    cursor: pointer;
+
+}
+.name input, .email input{
+    border: none;
+    outline: none;
+    padding-right: 5px;
+}
+.name input:focus{
+    border-top: none; 
+    border-right: none;
+    border-left: none; 
+    border-bottom: 2px solid #080d10; 
+    outline: none;
+    
+}
+.email input:focus{
+    border-top: none; 
+    border-right: none;
+    border-left: none; 
+    border-bottom: 2px solid #080d10; 
+    outline: none;
+}
+.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.image-layer .options{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: black;
+    border-radius: 2px;
+    left: 80px;
+    top: 80px;
+    background-color: #F6F6FC;
+    width: 120px;
+    height: 80px;
+    
+    
+    justify-content: center;
+}
+
+.image-layer .options .option{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    
+    align-items: center;
+    padding-left: 5px;
+    
+}
+.image-layer .options .option:hover{
+    background-color: #E8E6FD;
+}
+.cancel{
+    position: absolute;
+    color: white;
+    right: 3px;
+    top: 3px;
+}
+.cancel:hover{
+    cursor: pointer;
+}
+.option .form-control{
+    display: none;
+ }
+
+
+
+
+
+
+
+
+
